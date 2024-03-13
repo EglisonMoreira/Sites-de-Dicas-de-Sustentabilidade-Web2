@@ -1,0 +1,85 @@
+:root{
+    --black: #090809;
+    --ptimary: #382ebb;
+    --secundary: #f44e3f;
+    --ligth: #f4796b;
+    --other: hsl(8, 11%, 72%);
+    --other1: #f4998d;
+    --bg-color: #ffffff;
+    --bg-color1: #979797;
+}
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--bg-color1);  
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--bg-color);
+}
+
+body{ 
+    /* background-image: url(https://blog.me.com.br/wp-content/uploads/2019/01/LEO-e1590513003825.jpg);*/
+    height: 100vh;   /*remover antes de habilitar background-image acima*/
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 110, 187);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+nav{
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* background-color: var(--bg-color);*/
+    background-image: url(https://www.gaceta.unam.mx/wp-content/uploads/2023/10/231002-aca4-des-f1-inteligencia-artificial.jpg);
+}
+
+/*
+.container-fluid{
+    background-image: url(https://www.gaceta.unam.mx/wp-content/uploads/2023/10/231002-aca4-des-f1-inteligencia-artificial.jpg);
+}*/
+
+
+@keyframes blink {
+    0% { border-color: #ff0000; }
+    25%{border-color: #a502a5;}
+    50% { border-color: #00ff00; }
+    100% { border-color: #ff0000; }
+}
+
+/* Aplica o efeito de piscar ao passar o mouse */
+.nav-link:hover {
+    animation: blink 1s infinite;
+}
+
+/* Estilo básico do botão */
+.nav-link  {
+    display: inline-block;
+    padding: 7px 14px;
+    border: 2px solid transparent; /* Define uma borda transparente inicialmente */
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin: 10px;
+} 
+ 
+footer {
+    background-image: url(https://www.gaceta.unam.mx/wp-content/uploads/2023/10/231002-aca4-des-f1-inteligencia-artificial.jpg);
+    color: white;
+    padding: 20px 0;
+    bottom: 0;
+    width: 101%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
